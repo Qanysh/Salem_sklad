@@ -12,70 +12,193 @@
 
     <!-- Header -->
     <%- include('components/header.ejs') %>
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar">
-        <div class="menu container-fluid justify-content-center">
-            <ul class="row align-items-center">
-                <div class="about col">
-                    <li><a href="#about">O Salem sklad</a></li>
-                </div>
-                <div class="col">
-                    <li><a href="#prices">Цены</a></li>
-                </div>
-                <div class="col">
-                    <li><a href="#contacts">Контакты</a></li>
-                </div>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main>
-        <section id="about" class="py-5">
-            <div class="container">
-                <h2 class="text-center">О нас</h2>
-                <p class="text-center">Ваш текст об описании компании и услуг</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, libero sunt placeat
-                    aspernatur voluptate pariatur est enim harum ullam delectus, voluptates nihil facere nobis
-                    exercitationem quod eius suscipit doloribus sequi.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, libero sunt placeat
-                    aspernatur voluptate pariatur est enim harum ullam delectus, voluptates nihil facere nobis
-                    exercitationem quod eius suscipit doloribus sequi.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, libero sunt placeat
-                    aspernatur voluptate pariatur est enim harum ullam delectus, voluptates nihil facere nobis
-                    exercitationem quod eius suscipit doloribus sequi.</p>
+        <!-- Navigation -->
+        <nav id="navbar" class="navbar">
+            <div class="menu container-fluid justify-content-center">
+                <ul class="row align-items-center">
+                    <div class="about col">
+                        <li><a href="#about">O Salem sklad</a></li>
+                    </div>
+                    <div class="col">
+                        <li><a href="#prices">Цены</a></li>
+                    </div>
+                    <div class="col">
+                        <li><a href="#contacts">Контакты</a></li>
+                    </div>
+                </ul>
             </div>
-        </section>
+        </nav>
 
-        <section id="prices" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center">Цены</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique, necessitatibus reiciendis
-                    doloremque adipisci non vitae doloribus esse harum saepe suscipit! Quia sapiente voluptatem optio
-                    reiciendis provident distinctio vitae numquam?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla modi minima tempora at voluptatum
-                    quaerat consequatur eum placeat animi error quo commodi natus temporibus nemo vero dolorem aliquam,
-                    id voluptate?</p>
-                <!-- Таблица с ценами на аренду помещений -->
-            </div>
-        </section>
+        <!-- Main Content -->
+        <main>
+            <section class="info1">
+                <div class="container justify-content-between">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="container">
+                                <div class="info1-text text-left">
+                                    <h1>Складские
+                                        помещения</h1>
+                                    <p class="fs-5">“Салем” открывает новые
+                                        возможности для клиентов в поиске
+                                        идеального места для хранения и
+                                        управления своими товарами</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="container">
+                                <div class="col">
+                                    <div class="row">
+                                        <img class="image" style="width: 200px; padding-bottom: 12px;"
+                                            src="/images/1.jpg" alt="photo">
+                                        <img class="image" style="width: 200px; padding-bottom: 12px;"
+                                            src="/images/2.jpg" alt="photo">
+                                        <img class="image" style="width: 200px; padding-bottom: 12px;"
+                                            src="/images/10.jpg" alt="photo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info">
+                <div class="container justify-content-between">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="circle">
+                                    <div class="fa-solid fa-house text-white bg-success fs-3"></div>
+                                </div>
+                                <div class="green-line text-center">
+                                    <div class="text-white fs-5">От 5 м&#178; - 4000 тг/м&#178;</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="circle">
+                                    <div class="fa-solid fa-house text-white bg-success fs-3"></div>
+                                </div>
+                                <div class="green-line text-center">
+                                    <div class="text-white fs-5">От 10 м&#178; - 3500 тг/м&#178;</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="circle">
+                                    <div class="fa-solid fa-house text-white bg-success fs-3"></div>
+                                </div>
+                                <div class="green-line text-center">
+                                    <div class="text-white fs-5">От 20 м&#178; - индивидуально</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <img class="image" style="width: 200px; padding-bottom: 12px;" src="/images/5.jpg"
+                                    alt="photo">
+                                <img class="image" style="width: 200px; padding-bottom: 12px;" src="/images/7.jpg"
+                                    alt="photo">
+                                <img class="image" style="width: 200px; padding-bottom: 12px;" src="/images/9.jpg"
+                                    alt="photo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container info2 py-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="circle-2">
+                            <i class="fa-solid fa-house-lock text-white fs-1"></i>
+                        </div>
+                        <h1>Безопасность товаров</h1>
+                        <p class="fs-5">Склад оборудован
+                            системой безопасности,
+                            что обеспечивает защиту
+                            хранимых товаров от
+                            кражи, порчи и других
+                            негативных воздействий.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="circle-2">
+                            <i class="fa-solid fa-box-archive text-white fs-1"></i>
+                        </div>
+                        <h1>Чистые и новые склады</h1>
+                        <p class="fs-5">Благодаря различным
+                            размерам новых складских
+                            помещений, вы можете
+                            выбирать наиболее
+                            подходящий вариант в
+                            зависимости от своих
+                            потребностей.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="circle-2">
+                            <i class="fa-solid fa-fan text-white fs-1"></i>
+                        </div>
+                        <h1>Регулярная дезинфекция</h1>
+                        <p class="fs-5">Чистые склады
+                            помогают сохранить
+                            ценность товаров на
+                            протяжении всего
+                            цикла их хранения.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="main py-5">
+                <div class="container">
+                    <h2 class="text-center">О нас</h2>
+                    <p class="fs-5"><a class="font-weight-bold text-dark fs-3">«Salem sklad»</a> — это молодая и
+                        быстрорастущая компания в сфере складских услуг
+                        индивидуального хранения. Коллектив компании имеет большой опыт работы в коммерческой
+                        недвижимости.</p>
+                    <p class="fs-5">Наконец-то настало время, когда у каждого есть возможность быстрым, удобным и
+                        недорогим способом
+                        оставить на хранение любые вещи на любой срок в теплом, уютном, безопасном, специально
+                        оборудованном месте.</p>
+                    <p class="fs-3 font-weight-bold">Мы позаботимся о том:</p>
+                    <li class="fs-5"><span class="fs-5 bi bi-dash text-success"></span> чтобы вы смогли разместить
+                        столько вещей, сколько необходимо;</li>
+                    <li class="fs-5"><span class="fs-5 bi bi-dash text-success"></span> чтобы все ваши вещи на
+                        протяжении всего периода хранения оставались в целости и сохранности;</li>
+                    <li class="fs-5"><span class="fs-5 bi bi-dash text-success"></span> чтобы вы в любой момент дня и
+                        ночи имели доступ к своим вещам.</li>
+                </div>
+            </section>
 
-        <section id="contacts" class="py-5">
-            <div class="container">
-                <h2 class="text-center">Контакты</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius facilis, fugit eos consequuntur
-                    officia exercitationem illum, eveniet quo quis non, repellat perspiciatis nisi quidem velit
-                    accusamus nesciunt cum temporibus sint?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem in consectetur iste architecto
-                    perferendis aut reprehenderit molestiae itaque ea dolor obcaecati explicabo voluptas nobis
-                    blanditiis, voluptatem veritatis magnam! Reprehenderit!</p>
-                <!-- Форма обратной связи или контактная информация -->
-            </div>
-        </section>
-    </main>
-    <%- include('components/footer.ejs') %>
-    
-    <%- include('scripts/menu.ejs') %>
+            <section id="prices" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center">Цены</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique, necessitatibus
+                        reiciendis
+                        doloremque adipisci non vitae doloribus esse harum saepe suscipit! Quia sapiente voluptatem
+                        optio
+                        reiciendis provident distinctio vitae numquam?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla modi minima tempora at voluptatum
+                        quaerat consequatur eum placeat animi error quo commodi natus temporibus nemo vero dolorem
+                        aliquam,
+                        id voluptate?</p>
+                    <!-- Таблица с ценами на аренду помещений -->
+                </div>
+            </section>
+
+            <section id="contacts" class="py-5">
+                <div class="container">
+                    <h2 class="text-center">Контакты</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius facilis, fugit eos consequuntur
+                        officia exercitationem illum, eveniet quo quis non, repellat perspiciatis nisi quidem velit
+                        accusamus nesciunt cum temporibus sint?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem in consectetur iste
+                        architecto
+                        perferendis aut reprehenderit molestiae itaque ea dolor obcaecati explicabo voluptas nobis
+                        blanditiis, voluptatem veritatis magnam! Reprehenderit!</p>
+                    <!-- Форма обратной связи или контактная информация -->
+                </div>
+            </section>
+        </main>
+        <%- include('components/footer.ejs') %>
+
+            <%- include('scripts/menu.ejs') %>
 </body>
 
 

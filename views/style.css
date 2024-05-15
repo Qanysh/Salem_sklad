@@ -76,3 +76,56 @@
 .head{
         text-align: center;
 }
+.main a{
+    text-decoration: none;
+}
+.main li{
+    list-style-type: none;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #228B22;
+    border-radius: 50%; /* Делаем круглый */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #fff;
+    border-width: 2em;
+}
+.circle-2 {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    background-color: #228B22;
+    border-radius: 50%; /* Делаем круглый */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.green-line {
+    display: inline-flex;
+    width: 300px;
+    height: 50px;
+    background-color: #228B22;
+    margin-left: 10px; /* Расстояние между кругом и линией */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info1{
+    padding-top: 50px;
+}
+
+.info .row{
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.info2 .col-lg-4{
+    margin-bottom: 1.5em;
+    text-align: center;
+    align-items: center;
+}
