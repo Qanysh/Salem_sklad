@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.get('/admin', ensureIsAdmin, async (req, res) => {
     const user = await User.findById(req.session.userId);
-    res.render('admin/admin');
+    res.render('admin/admin', {user});
 });
 
 app.get('/', (req, res) => {

@@ -1,132 +1,45 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    /* белый фон */
+.navbar {
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
 }
 
-.header-top {
-    background-color: #28a745;
-    /* зеленый цвет */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    /* белый текст */
-}
-
-.contact-info {
-    text-align: right;
-}
-
-.phone {
-    font-size: 14px;
-    color: #333333;
-    /* темно-серый текст */
-}
-
-.working-hours {
-    font-size: 12px;
-    color: #666666;
-    /* серый текст */
-}
-
-.location-menu {
-    font-size: 12px;
-    color: #666666;
-    /* серый текст */
-}
-
-.location-menu ul {
+.navbar ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
-.location-menu li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.contact-btn {
-    background-color: #ffffff;
-    /* белая кнопка */
-    color: #28a745;
-    /* зеленый текст */
-    border: 2px solid #28a745;
-    /* зеленая обводка */
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-header {
-    background-color: #28a745;
-    /* зеленый фон */
-    color: #ffffff;
-    /* белый текст */
-    padding: 10px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    /* белый текст */
+.navbar a {
+    padding: 15px;
     text-decoration: none;
-    font-size: 18px;
-}
-
-section {
-    padding: 20px;
-}
-
-footer {
-    background-color: #28a745;
-    /* зеленый фон */
-    color: #ffffff;
-    /* белый текст */
+    color: white;
+    display: block;
+    margin: auto;
     text-align: center;
-    padding: 20px;
+}
+
+.about {
+    background-color: #228B22;
+}
+
+.navbar_scrolled {
     position: fixed;
-    bottom: 0;
+    top: 0;
+    left: 0;
     width: 100%;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
 }
 
-footer .contact-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        top: -50px;
+    }
 
-footer .contact-info div {
-    margin-right: 20px;
-}
-
-footer .contact-info div:last-child {
-    margin-right: 0;
-}
-
-footer .contact-info a {
-    color: #ffffff;
-    /* белый текст */
-    text-decoration: none;
+    to {
+        opacity: 1;
+        top: 0px;
+    }
 }
