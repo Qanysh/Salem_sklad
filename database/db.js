@@ -6,10 +6,16 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     username: {type: String, required: true},
-    phone_number: {type: String, unique: true},
+    hashed_password: { type: String, required: true},
     admin: {type: Boolean, default: false}
 });
 
-const User = mongoose.model('User', userSchema);
+const clientSchema = new Schema({
+    clientname: {type: String, required:true},
+    phone_number: {type: String, unique:true}
+});
 
-module.exports = User;
+const User = mongoose.model('User', userSchema);
+const Client = mongoose.model('Client', clientSchema);
+
+module.exports = {User, Client};
