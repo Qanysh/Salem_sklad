@@ -23,6 +23,9 @@
                         <li class="fs-5"><a href="#prices">Цены</a></li>
                     </div>
                     <div class="col">
+                        <li class="fs-5"><a href="#photo">Фотографии</a></li>
+                    </div>
+                    <div class="col">
                         <li class="fs-5"><a href="#contacts">Контакты</a></li>
                     </div>
                 </ul>
@@ -31,7 +34,7 @@
 
         <!-- Main Content -->
         <main>
-            <section class="info1">
+            <section id="prices" class="info1">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -154,47 +157,49 @@
                 </div>
             </section>
 
-            <section class="py-5 bg-light">
+            <section id="photo" class="py-5 bg-light">
                 <div class="container">
                     <h2 class="text-center">Фото складских помещений</h2>
                     <div class="container">
-                    <div class="row justify-content-center">
-                        <img src="/images/1.jpg" alt="pictures" style="width: 200px; padding: 10px;">
-                        <img src="/images/2.jpg" alt="pictures" style="width: 200px; padding: 10px;">
-                        <img src="/images/3.jpg" alt="pictures" style="width: 200px; padding: 10px;">
-                        <img src="/images/9.jpg" alt="pictures" style="width: 200px; padding: 10px;">
+                        <div class="row justify-content-center">
+                            <img src="/images/1.jpg" alt="pictures" style="width: 200px; padding: 10px;">
+                            <img src="/images/2.jpg" alt="pictures" style="width: 200px; padding: 10px;">
+                            <img src="/images/3.jpg" alt="pictures" style="width: 200px; padding: 10px;">
+                            <img src="/images/9.jpg" alt="pictures" style="width: 200px; padding: 10px;">
+                        </div>
+                        <div class="row justify-content-center">
+                            <img src="/images/4.jpg" alt="pictures" style="width: 200px; padding: 10px;">
+                            <img src="/images/5.jpg" alt="pictures" style="width: 200px; padding: 10px;">
+                            <img src="/images/6.jpg" alt="pictures" style="width: 200px; padding: 10px;">
+                            <img src="/images/8.jpg" alt="pictures" style="width: 200px; padding: 10px;">
+                        </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <img src="/images/4.jpg" alt="pictures" style="width: 200px; padding: 10px;">
-                        <img src="/images/5.jpg" alt="pictures" style="width: 200px; padding: 10px;">
-                        <img src="/images/6.jpg" alt="pictures" style="width: 200px; padding: 10px;">
-                        <img src="/images/8.jpg" alt="pictures" style="width: 200px; padding: 10px;">
-                    </div>
-                </div>
-                    <!-- Таблица с ценами на аренду помещений -->
                 </div>
             </section>
 
-            <section id="prices" class="py-5">
+            <section id="arenda-box" class="arenda-box container-fluid py-5">
                 <div class="container">
-                    <h2 class="text-center">Цены</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius facilis, fugit eos
-                        consequuntur
-                        officia exercitationem illum, eveniet quo quis non, repellat perspiciatis nisi quidem
-                        velit
-                        accusamus nesciunt cum temporibus sint?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem in consectetur iste
-                        architecto
-                        perferendis aut reprehenderit molestiae itaque ea dolor obcaecati explicabo voluptas
-                        nobis
-                        blanditiis, voluptatem veritatis magnam! Reprehenderit!</p>
-                    <!-- Форма обратной связи или контактная информация -->
-                </div>
+                    <h2 class="text-center text-white">Арендовать бокс</h2>
+                    <div class="row justify-content-center">
+                        <form action="">
+                            <input class="name_phone" type="text" name="clientname" placeholder="Имя"
+                                aria-required="true" aria-invalid="true">
+                        </form>
+                        <form action="">
+                            <input class="name_phone" type="text" id="phone" name="phone_number"
+                                placeholder="Номер телефона" aria-required="true" aria-invalid="true">
+                        </form>
+                        <div class="text-white fs-5" style="padding: 10px;"><input type="checkbox" name="privacy"> Я согласен на обработку
+                            персональных данных</div>
+                        <button clas="arena-oform" type="submit">Оформить заявку</button>
+                    </div>
             </section>
         </main>
         <%- include('components/footer.ejs') %>
 
             <%- include('scripts/menu.ejs') %>
+                <%- include('scripts/phone_mask.ejs') %>
+
 </body>
 
 

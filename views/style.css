@@ -146,6 +146,18 @@ h2{
     background-color: #228B22;
 }
 
-.ways-to-contact{
-    border: grey;
+.arenda-box{
+    background-image: url('images/background_green.jpeg');
+}
+.arenda-box button{
+    background-color: yellow;
+    width: 50%;
+    height: 50px;
+    border: none;
+}
+input.name_phone{
+    font-size: 17px;
+    height: 50px;
+    width: 100%;
+    padding: 15px;
 }
