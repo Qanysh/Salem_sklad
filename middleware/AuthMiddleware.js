@@ -15,7 +15,7 @@ async function ensureIsAdmin(req, res, next) {
             res.redirect('/');
         }
     } else {
-        res.redirect('/');
+        res.redirect('/login');
     }
 }
 
