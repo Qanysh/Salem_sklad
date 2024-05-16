@@ -1,3 +1,11 @@
+h1{
+    font-family: "Russo One", Roboto, sans-serif;
+}
+
+h2{
+    font-family: "Russo One", Roboto, sans-serif;
+}
+
 .navbar {
     background-color: #000000;
     padding: 0px;
@@ -74,13 +82,16 @@
 }
 
 .head{
-        text-align: center;
+    text-align: center;
 }
 .main a{
     text-decoration: none;
 }
 .main li{
     list-style-type: none;
+}
+.main{
+    background-image: url('/images/background_about.jpeg');
 }
 .circle {
     width: 50px;
@@ -116,6 +127,7 @@
 
 .info1{
     padding-top: 50px;
+    background-image: url('/images/background_info.png');
 }
 
 .info .row{
@@ -130,10 +142,10 @@
     align-items: center;
 }
 
-.about_info {
+.image-container{
     background-color: #228B22;
 }
 
-.image-container{
-    background-color: #228B22;
+.ways-to-contact{
+    border: grey;
 }
