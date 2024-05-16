@@ -4,12 +4,10 @@ const path = require('path');
 const ensureIsAdmin = require('./middleware/AuthMiddleware');
 const { loginPost } = require('./controllers/loginControllers');
 const { registerPost } = require('./controllers/registerControllers');
-const { User, Client } = require('./database/db');
-const { 
-    adminControllerGetUsers,
-    adminControllerUpdateUsers,
-    adminControllerDeleteUsers,
-} = require('./controllers/adminControllers');
+const { adminControllerGetUsers } = require('./controllers/adminControllers');
+const { clientPOST } = require('./controllers/clientControllers');
+const { Client } = require('./database/db');
+const { error } = require('console');
 
 const app = express();
 const port = 3000;
@@ -43,8 +41,13 @@ app.get("/admin", ensureIsAdmin, async (req, res) => {
     return adminControllerGetUsers(req, res);
 });
 
-app.get('/', (req, res) => {
-    res.render('index');
+app.get('/', async (req, res) => {
+    const client = await Client.findById(req.session?.userId);
+    res.render('index', {client: client, error:null, success: null });
+});
+
+app.post('/', async(req, res) => {
+    return clientPOST(req, res);
 });
 
 app.listen(port, '0.0.0.0', () => {

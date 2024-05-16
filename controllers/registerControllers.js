@@ -10,10 +10,6 @@ async function registerPost(req, res) {
         return res.render('signup', { user: null, error: 'Passwords do not match!', success: null });
     }
 
-    // if (password.length < 8) {
-    //     return res.render('signup', { user: null, error: 'Password must be at least 8 characters long!', success: null });
-    // }
-
     if (userExists) {
         return res.render('signup', { user: null, error: 'User already exists!', success: null });
     }

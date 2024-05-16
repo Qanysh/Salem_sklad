@@ -12,16 +12,16 @@
     <%- include('../components/header.ejs') %>
 
         <div class="container">
-            <div class="fs-2 fw-semibold mb-4">Admin Panel</div>
+            <div class="fs-2 fw-semibold mb-4">Админ панель</div>
         </div>
 
         <div class="container mt-3">
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Client Name</th>
-                        <th scope="col">Phone Number</th>
-                        <th scope="col">Actions</th>
+                        <th scope="col">Имя</th>
+                        <th scope="col">Номер телефона</th>
+                        <th scope="col">Связались</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,40 +33,15 @@
                             <td>
                                 <%= us.phone_number %>
                             </td>
-                    
+
                             <td>
-                                
-                            </td>
-                            <td>
-                                <% if (us.admin) { %>
-                                    <span class="badge bg-success">Admin</span>
-                                    <% } %>
+                                <input class="admin-checkbox" type="checkbox" name="privacy">
                             </td>
                         </tr>
                         <% }); %>
                 </tbody>
             </table>
         </div>
-
-        <script>
-            function deleteUser(userId) {
-                Swal.fire({
-                    title: 'Are you sure?',
-                    text: "You won't be able to revert this!",
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, delete it!'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.href = `/admin/users/delete/${userId}`;
-                    }
-                })
-            }
-        </script>
-
-
         <%- include('../components/footer.ejs') %>
 
 </body>

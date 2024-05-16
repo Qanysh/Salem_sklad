@@ -161,3 +161,8 @@ input.name_phone{
     width: 100%;
     padding: 15px;
 }
+
+.admin-checkbox{
+    width: 50%;
+    height: 50px;
+}

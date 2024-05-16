@@ -16,9 +16,9 @@
                 <form method="POST" action="/signup">
                     <div class="fs-3 fw-semibold mb-3">Sign Up an Account</div>
                     <% if (success) { %>
-                        <span class="badge text-bg-success mb-3 fs-5"><%= success %> => <a href="/login">Log in now!</a></span>
+                        <span class="badge text-bg-success mb-3 fs-5"><a href="/login">Log in now!</a></span>
                     <% } else if (error) { %>
-                        <span class="badge text-bg-danger mb-3 fs-5"><%= error %></span>
+                        <span class="badge text-bg-danger mb-3 fs-5"></span>
                     <% } %>
                     <div class="row">
                         <div class="mb-3">

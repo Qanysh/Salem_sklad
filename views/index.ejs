@@ -181,18 +181,24 @@
                 <div class="container">
                     <h2 class="text-center text-white">Арендовать бокс</h2>
                     <div class="row justify-content-center">
-                        <form action="">
-                            <input class="name_phone" type="text" name="clientname" placeholder="Имя"
+                        <form method="POST" action="/#arenda-box">
+                            <% if (success) { %>
+                                <span class="badge text-bg-success mb-3 fs-5">Заявка успешно оформлена. Свяжемся с вами как можно скорее!</span>
+                            <% } else if (error) { %>
+                                <span class="badge text-bg-danger mb-3 fs-5"><%= error %></span>
+                            <% } %>
+                            <input class="name_phone form-control" type="text" name="clientname" placeholder="Имя"
                                 aria-required="true" aria-invalid="true">
-                        </form>
-                        <form action="">
-                            <input class="name_phone" type="text" id="phone" name="phone_number"
+                            <input class="name_phone form-control" type="text" id="phone" name="phone_number"
                                 placeholder="Номер телефона" aria-required="true" aria-invalid="true">
+
+                            <div class="text-white fs-5" style="padding: 10px;"><input type="checkbox" name="privacy"> Я
+                                согласен на обработку
+                                персональных данных</div>
+                            <button class="arena-oform" type="submit">Оформить заявку</button>
                         </form>
-                        <div class="text-white fs-5" style="padding: 10px;"><input type="checkbox" name="privacy"> Я согласен на обработку
-                            персональных данных</div>
-                        <button clas="arena-oform" type="submit">Оформить заявку</button>
                     </div>
+                </div>
             </section>
         </main>
         <%- include('components/footer.ejs') %>
