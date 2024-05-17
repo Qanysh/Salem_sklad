@@ -1,9 +1,11 @@
 h1{
     font-family: "Russo One", Roboto, sans-serif;
+    color: #228B22;
 }
 
 h2{
     font-family: "Russo One", Roboto, sans-serif;
+    color: #228B22;
 }
 
 .navbar {
@@ -161,4 +163,8 @@ input.name_phone{
     height: 50px;
     width: 100%;
     padding: 15px;
+}
+
+.what-save-des {
+    padding-top: 20px;
 }
