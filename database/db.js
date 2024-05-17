@@ -12,7 +12,9 @@ const userSchema = new Schema({
 
 const clientSchema = new Schema({
     clientname: {type: String, required:true},
-    phone_number: {type: String, unique:true}
+    phone_number: {type: String, unique:true},
+    box_size: {type: String},
+    created_at: { type: Date, default: Date.now }
 });
 
 const User = mongoose.model('User', userSchema);

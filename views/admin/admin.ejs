@@ -19,9 +19,11 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Имя</th>
+                        <th scope="col" class="order" >Имя</th>
                         <th scope="col">Номер телефона</th>
-                        <th scope="col">Связались</th>
+                        <th scope="col" class="order">Размер бутика</th>
+                        <th scope="col" class="order">Дата заявки</th>
+                        <th scope="col" >Связались</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,8 +32,17 @@
                             <td>
                                 <%= us.clientname %>
                             </td>
+
                             <td>
                                 <%= us.phone_number %>
+                            </td>
+
+                            <td>
+                                <%= us.box_size %>
+                            </td>
+
+                            <td>
+                                <%= moment(us.created_at).format('Do MMMM, YYYY') %>
                             </td>
 
                             <td>
@@ -42,8 +53,8 @@
                 </tbody>
             </table>
         </div>
-        <%- include('../components/footer.ejs') %>
 
+        <%- include('../scripts/sort_table.ejs') %>
 </body>
 
 </html>

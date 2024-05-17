@@ -45,16 +45,17 @@
                                             <div class="info1-text text-left">
                                                 <h1>Складские
                                                     помещения</h1>
-                                                <p class="fs-5">“Салем” открывает новые
-                                                    возможности для клиентов в поиске
-                                                    идеального места для хранения и
-                                                    управления своими товарами</p>
+                                                <p class="fs-5">«Salem sklad» открывает новые возможности для клиентов в
+                                                    поиске идеального места для хранения и управления своими товарами.
+                                                    Мы предлагаем современные и надежные склады, оснащенные передовыми
+                                                    технологиями для обеспечения безопасности и сохранности ваших
+                                                    товаров.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="info col-md-9">
                                     <div class="container justify-content-between">
                                         <div class="col">
@@ -85,7 +86,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col">
                             <!-- Space for pictures -->
@@ -179,7 +180,7 @@
 
             <section id="arenda-box" class="arenda-box container-fluid py-5">
                 <div class="container">
-                    <h2 class="text-center text-white">Арендовать бокс</h2>
+                    <h2 class="text-center text-white">Арендовать бутик</h2>
                     <div class="row justify-content-center">
                         <form method="POST" action="/#arenda-box">
                             <% if (success) { %>
@@ -191,13 +192,22 @@
                                     </span>
                                     <% } %>
                                         <input class="name_phone form-control" type="text" name="clientname"
-                                            placeholder="Имя" aria-required="true" aria-invalid="true">
+                                            placeholder="Имя" required>
                                         <input class="name_phone form-control" type="text" id="phone"
-                                            name="phone_number" placeholder="Номер телефона" aria-required="true"
-                                            aria-invalid="true">
-
+                                            name="phone_number" placeholder="Номер телефона" required>
+                                        <label for="box_size" class="text-white fs-5">Выберите предпочитаемый размер</label>
+                                        <div>
+                                            <select name="box_size" id="box_size">
+                                                <option disabled>Выберите предпочитаемый размер</option>
+                                                <option selected value="5 м&#178">5 м&#178</option>
+                                                <option value="7 м&#178">7 м&#178</option>
+                                                <option value="10 м&#178">10 м&#178</option>
+                                                <option value="20 м&#178">20 м&#178</option>
+                                                <option value="Более">Более</option>
+                                            </select>
+                                        </div>
                                         <div class="text-white fs-5" style="padding: 10px;"><input type="checkbox"
-                                                name="privacy"> Я
+                                                name="privacy" required> Я
                                             согласен на обработку
                                             персональных данных</div>
                                         <div class="row justify-content-center">

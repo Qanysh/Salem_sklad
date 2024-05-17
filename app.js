@@ -7,7 +7,7 @@ const { registerPost } = require('./controllers/registerControllers');
 const { adminControllerGetUsers } = require('./controllers/adminControllers');
 const { clientPOST } = require('./controllers/clientControllers');
 const { Client } = require('./database/db');
-const { error } = require('console');
+
 
 const app = express();
 const port = 3000;
