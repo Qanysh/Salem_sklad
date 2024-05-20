@@ -101,7 +101,7 @@
             </section>
             <section id="about" class="main container-fluid py-5">
                 <div class="container about_info text-white">
-                    <h2 class="text-center">О нас</h2>
+                    <h1 class="text-center">О нас</h1>
                     <p class="fs-5"><a class="font-weight-bold text-white fs-3">«Salem Sklad»</a> — это молодая
                         и
                         быстрорастущая компания в сфере складских услуг
@@ -125,7 +125,7 @@
 
             <section id="photo" class="py-5 bg-light">
                 <div class="container">
-                    <h2 class="text-center">Фото складских помещений</h2>
+                    <h1 class="text-center">Фото складских помещений</h1>
                     <div class="container">
                         <div class="row justify-content-center">
                             <img src="/images/1.jpg" alt="pictures" style="width: 200px; padding: 10px;">
@@ -145,7 +145,7 @@
 
             <section id="how-it-works" class="how-it-works container-fluid justify-content-center">
                 <div class="container py-5">
-                    <h2 class="text-center">Как это работает?</h2>
+                    <h1 class="text-center">Как это работает?</h1>
                     <div class="container py-3">
                         <div class="col">
                             <div class="row">
@@ -170,9 +170,9 @@
                 </div>
             </section>
 
-            <section class="what-save container-fluid py-5">
+            <!-- <section class="what-save container-fluid py-5">
                 <div class="container">
-                    <h2 class="text-center">Что хранят в Salem Sklad</h2>
+                    <h1 class="text-center">Что хранят в Salem Sklad</h1>
                     <div class="container py-3">
                         <div class="row py-3">
                             <div class="col">
@@ -278,13 +278,80 @@
                         </div>
                     </div>
                 </div>
+            </section> -->
+
+            <section class="box-description container-fluid py-5">
+                <h1 class="text-center py-4">Что хранят в Salem Sklad</h1>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md">
+                            <div class="box-description-container container bg-white py-3">
+                                <h2 class="text-center">5 м&#178</h2>
+                                <p class="text-center fs-5">Небольшой склад идеально подходят для сохранения ваших вещей
+                                    в безопасности во время
+                                    вашего отсутствия, будь то во время командировки или отпуска. Они также удобны для
+                                    временного хранения личных вещей, которые вам сейчас не нужны.</p>
+                                <div class="row py-3">
+                                    <div class="col align-items-center">
+                                        <img src="/images/шины.jpg" alt="" width="100px" height="100px">
+                                    </div>
+                                    <div class="col align-items-center">
+                                        <img src="/images/коляска.png" alt="" width="100px" height="100px">
+                                    </div>
+                                    <div class="col align-items-center">
+                                        <img src="/images/коробки.jpg" alt="" width="100px" height="100px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="box-description-container container bg-white py-3">
+                                <h2 class="text-center">10 м&#178</h2>
+                                <p class="text-center fs-5">Средние помещения хорошо подходят для временного хранения
+                                    личных вещей и мебели во время переезда или ремонта. Их также удобно использовать
+                                    для хранения оборудования или товаров для малого бизнеса.</p>
+                                <div class="row py-3 justify-content-center">
+                                    <div class="col align-items-center">
+                                        <img src="/images/обогреватель.jpg" alt="" width="100px" height="100px">
+                                    </div>
+                                    <div class="col align-items-center">
+                                        <img src="/images/папки.jpeg" alt="" width="100px" height="100px">
+                                    </div>
+                                    <div class="col align-items-center">
+                                        <img src="/images/цемент.png" alt="" width="100px" height="100px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="box-description-container container bg-light py-3">
+                                <h2 class="text-center">20 м&#178</h2>
+                                <p class="text-center fs-5">Если вам нужно хранить большой объем, то вам необходимы
+                                    боксы самых больших размеров. Они идеально подходят для организации склада
+                                    интернет-магазина или для среднего бизнеса.</p>
+                                <div class="row py-3">
+                                    <div class="col align-items-center">
+                                        <img src="/images/мотоцикл.png" alt="" width="100px" height="100px">
+                                    </div>
+                                    <div class="col align-items-center">
+                                        <img src="/images/диван.jpg" alt="" width="100px" height="100px">
+                                    </div>
+                                    <div class="col align-items-center">
+                                        <img src="/images/стройка.jpg" alt="" width="100px" height="100px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <section id="arenda-box" class="arenda-box container-fluid py-5">
                 <div class="container">
                     <h2 class="text-center text-white">Арендовать бутик</h2>
                     <div class="row justify-content-center">
-                        <form method="POST" action="/#arenda-box">
+                        <form method="POST" action="/#arenda-box" class="py-3">
                             <% if (success) { %>
                                 <span class="badge text-bg-success mb-3 fs-5">Заявка успешно оформлена. Свяжемся с вами
                                     как можно скорее!</span>
@@ -324,7 +391,7 @@
         <%- include('components/footer.ejs') %>
 
             <%- include('scripts/menu.ejs') %>
-                <%- include('scripts/phone_mask.ejs') %>
+            <%- include('scripts/phone_mask.ejs') %>
 
 </body>
 

@@ -168,3 +168,17 @@ input.name_phone{
 .what-save-des {
     padding-top: 20px;
 }
+
+.box-description .col-md{
+    padding: 1em;
+}
+
+.box-description-container{
+    height: 450px;
+    box-shadow: 5px 5px 5px 5px grey;
+    border-width: 5px;
+    border-color: #228B22;
+}
+.box-description-container:hover{
+    transform: scale(1.1);
+}
