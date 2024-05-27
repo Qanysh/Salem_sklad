@@ -14,31 +14,31 @@
             <div class="col-md-6">
                 <!-- Login Form -->
                 <form method="POST" action="/signup">
-                    <div class="fs-3 fw-semibold mb-3">Sign Up an Account</div>
+                    <div class="fs-3 fw-semibold mb-3">Регистрация</div>
                     <% if (success) { %>
-                        <span class="badge text-bg-success mb-3 fs-5"><a href="/login">Log in now!</a></span>
+                        <span class="badge text-bg-success mb-3 fs-5"><a href="/login">Войти в аккаунт</a></span>
                     <% } else if (error) { %>
                         <span class="badge text-bg-danger mb-3 fs-5"></span>
                     <% } %>
                     <div class="row">
                         <div class="mb-3">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" name="username" placeholder="Enter username...">
+                            <label for="username" class="form-label">Имя пользователя</label>
+                            <input type="text" class="form-control" name="username" placeholder="Введите имя пользователя...">
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" name="password" placeholder="Enter password...">
+                            <label for="password" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" name="password" placeholder="Введите пароль...">
                         </div>
                         <div class="mb-3">
-                            <label for="re_password" class="form-label">Password</label>
-                            <input type="password" class="form-control" name="re_password" placeholder="Repeat password...">
+                            <label for="re_password" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" name="re_password" placeholder="Повторите пароль...">
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                            <button type="submit" class="btn btn-primary">Регистрация</button>
                         </div>
                         <% if (success) { %>
                             <div class="mb-3">
-                                Already registered? <a href="/login" class="link-primary text-decoration-none">Log in now!</a>
+                                Уже загеристрированы? <a href="/login" class="link-primary text-decoration-none">Войти в аккаунт</a>
                             </div>
                         <% } %>
                     </div>

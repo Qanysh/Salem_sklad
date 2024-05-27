@@ -14,24 +14,24 @@
             <div class="col-md-6">
                 <!-- Login Form -->
                 <form method="POST" action="/login">
-                    <div class="fs-3 fw-semibold mb-3">Login to Your Account</div>
+                    <div class="fs-3 fw-semibold mb-3">Войдите в ваш аккаунт</div>
                     <% if (error) {%>
                         <span class="badge text-bg-danger mb-3 fs-5"><%= error %></span>
                     <% } %>
                     <div class="row">
                         <div class="mb-3">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" name="username" placeholder="Enter username">
+                            <label for="username" class="form-label">Имя пользователя</label>
+                            <input type="text" class="form-control" name="username" placeholder="Введите имя пользователя">
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" name="password" placeholder="Enter password">
+                            <label for="password" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" name="password" placeholder="Введите пароль">
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-primary">Войти</button>
                         </div>
                         <div class="mb-3">
-                            Still not registered? <a href="/signup" class="link-primary text-decoration-none">Sign up now!</a>
+                            Еще не загеристрированы? <a href="/signup" class="link-primary text-decoration-none">Зарегистрируйтесь сейчас!</a>
                         </div>
                     </div>
                 </form>
