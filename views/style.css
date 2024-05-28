@@ -8,7 +8,11 @@ h2{
     font-family: "Russo One", Roboto, sans-serif;
     color: #228B22;
 }
-
+h3{
+    padding-top: 1rem;
+    font-family: "Russo One", Roboto, sans-serif;
+    color: #228B22;
+}
 .navbar {
     background-color: #000000;
     padding: 0px;
@@ -170,12 +174,16 @@ input.name_phone{
     padding-top: 20px;
 }
 
+.safety-box p{
+    color: grey;
+}
+
 .box-description .col-md{
     padding: 1em;
 }
 
 .box-description-container{
-    height: 525px;
+    height: 550px;
     box-shadow: 5px 5px 5px 5px grey;
     border-width: 5px;
     border-color: #228B22;
