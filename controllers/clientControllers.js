@@ -4,6 +4,8 @@ const { Client } = require('../database/db');
 async function clientPOST(req, res){
     const { clientname, phone_number, box_size, created_at } = req.body;
 
+    const clientExists = await Client.findOne({ phone_number: phone_number });
+
     if (clientExists) {
         return res.render('index', { error: 'Такой номер уже зарегистрирован!', success: null });
     }
